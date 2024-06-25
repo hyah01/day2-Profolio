@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+      <div class="bg-dark col-auto col-md-2 min-vh-100 sidebar" [class.collapsed]="isCollapsed">  <!-- bind .collapsed css to this side bar  -->
+        <div class="bg-dark">
+          <a class="d-flex text-decoration-none align-items-center">
+            <span *ngIf="!isCollapsed" class="fs-4 none d-sm-inline fw-bolder text-wrap">Hy Huynh</span>
+            <i *ngIf="isCollapsed" class="bi bi-list"></i>
+          </a>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <i class="bi bi-amd"></i>
+              <a *ngIf="!isCollapsed" class="nav-link" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-amd"></i>
+              <a *ngIf="!isCollapsed" class="nav-link" routerLink="/about" routerLinkActive="active-link">About</a>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-amd"></i>
+              <a *ngIf="!isCollapsed" class="nav-link" routerLink="/projects" routerLinkActive="active-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <i class="bi bi-amd"></i>
+              <a *ngIf="!isCollapsed" class="nav-link" routerLink="/contact" routerLinkActive="active-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button *ngIf="isCollapsed" class="toggle-btn-t" (click)="toggleSidebar()"></button>

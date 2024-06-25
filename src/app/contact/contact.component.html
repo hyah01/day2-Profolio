@@ -1,1 +1,13 @@
-<p>contact works!</p>
+<form #f = "ngForm" (ngSubmit) = "onSubmit(f)" novalidate>
+    <input name="first" ngModel required #first = "ngModel">
+    <br>
+    <input name="last" ngModel>
+    <br>
+    <button>Submit</button>
+
+</form>
+
+<p>First Name: {{first.value}}</p>
+<p>First Name valid: {{first.valid}}</p>
+<p>Form Value: {{f.value | json}}</p>
+<p>Form Valid: {{f.valid}}</p>

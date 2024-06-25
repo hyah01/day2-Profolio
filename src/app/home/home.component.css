@@ -1,0 +1,28 @@
+.name-color {
+    color: rgb(105, 206, 247)
+}
+
+.intro h1{
+    font-size: 100px;
+}
+
+.intro {
+    padding-top: 5rem;
+}
+
+.picture {
+    padding-top: 10rem;
+}
+
+
+@media (max-width: 768px) {
+    .intro h1 {
+      font-size: 40px; 
+    }
+  }
+
+  @media (max-width: 576px) {
+    .intro h1 {
+      font-size: 30px; 
+    }
+  }
