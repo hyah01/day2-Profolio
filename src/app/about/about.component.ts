@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
+  isCollapsed = true;
+
+  toggleAccordion() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 
 }
