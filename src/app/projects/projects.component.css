@@ -1,0 +1,30 @@
+.title {
+    font-size: 70px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid skyblue;
+    background-color: skyblue;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.ptitle {
+    color: skyblue;
+}
+
+.image-container:hover{
+    -webkit-transform: scale(1.05);
+}
+
+.buttonLink{
+    background-color: skyblue;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+
+
+.fit-cover {
+    object-fit: cover;
+}
