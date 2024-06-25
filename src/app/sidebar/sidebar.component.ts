@@ -14,6 +14,7 @@ export class SidebarComponent {
 
   @HostListener('document:click', ['$event'])
   onClick(event: MouseEvent) {
+    // When Clicked Out it will toggle the nav bar
     const clickInside = (event.target as HTMLElement).closest('.sidebar, .toggle-btn, .toggle-btn-t');
     if (!clickInside) {
       this.isCollapsed = true;
